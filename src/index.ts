@@ -37,14 +37,16 @@ export class Logger {
 		private readonly defaultTags: (() => string)[] = []
 	) { }
 
-	public fatal(message: string, tags: string[] = []): void {
+	public fatal(message: string, tags: string[] = []): never {
 		tags.unshift("fatal");
 		this.log(message, tags, LogLevel.Error);
+		return undefined!;
 	}
 
-	public warn(message: string, tags: string[] = []): void {
+	public warn(message: string, tags: string[] = []): never {
 		tags.unshift("warning");
 		this.log(message, tags, LogLevel.Warn);
+		return undefined!;
 	}
 
 	public info(message: string, tags: string[] = []): void {

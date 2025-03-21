@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/ez-log",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -31,9 +31,6 @@
     "@rbxts/compiler-types": "^3.0.0-types.0",
     "@rbxts/types": "^1.0.813",
     "roblox-ts": "^3.0.0",
-    "typescript": "^5.7.2"
-  },
-  "dependencies": {
-    "@rbxts/string-builder": "^1.0.0"
+    "typescript": "^5.5.3"
   }
 }
